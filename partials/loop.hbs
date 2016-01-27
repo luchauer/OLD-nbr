@@ -9,6 +9,11 @@
     <header class="post-header">
         <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
     </header>
+    {{#if image}}
+    <section class="post-image">
+        <img class="post-feature-image" src="{{image}}" {{#foreach tags}}{{#if @first}}alt="{{tag.name}}"{{/if}}{{/foreach}} />
+    </section>
+    {{/if}}
     <section class="post-excerpt">
         <p>{{excerpt words="26"}} <a class="read-more" href="{{url}}">&raquo;</a></p>
     </section>
