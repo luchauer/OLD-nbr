@@ -11,7 +11,7 @@
     </header>
     {{#if image}}
     <section class="post-image">
-        <img src="{{image}}" alt="{{name}}" />
+        <img class="post-feature-image" src="{{image}}" {{#foreach tags}}{{#if @first}}alt="{{tag.name}}"{{/if}}{{/foreach}} />
     </section>
     {{/if}}
     <section class="post-excerpt">

@@ -947,6 +947,10 @@ body:not(.post-template) .post-title {
     text-decoration: none;
 }
 
+.post-feature-image {
+    width: 100%
+}
+
 .post-excerpt p {
     margin: 0;
     font-size: 0.9em;
